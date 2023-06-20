@@ -1,0 +1,282 @@
+<!--include ../blocks/general/limits/limits-->
+<!--include ../blocks/general/trends/trends-->
+<!--include ../blocks/general/value_proposition/value_proposition-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+  <title>Braimstorm booster</title>
+</head>
+
+<body>
+  <header class="header header-conteiner">
+    <div class="header__lang"> <a class="header__lang-ru _lang _active-lang" href="#" id="lang">RU</a><a class="header__lang-en _lang" href="#">EN</a></div>
+  </header>
+  <section class="nav">
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item"> <a href="#1"><img src="assets/images/general/1small.svg" alt="Номер задания 1" /></a></li>
+        <li class="nav__item"> <a href="#2"><img src="assets/images/general/2small.svg" alt="Номер задания 2" /></a></li>
+        <li class="nav__item"> <a href="#3"><img src="assets/images/general/3small.svg" alt="Номер задания 3" /></a></li>
+        <li class="nav__item"> <a href="#4"><img src="assets/images/general/4small.svg" alt="Номер задания 4" /></a></li>
+        <li class="nav__item"> <a href="#5"><img src="assets/images/general/5small.svg" alt="Номер задания 5" /></a></li>
+        <li class="nav__item"> <a href="#6"><img src="assets/images/general/6small.svg" alt="Номер задания 6" /></a></li>
+        <li class="nav__item"> <a href="#7"><img src="assets/images/general/7small.svg" alt="Номер задания 7" /></a></li>
+        <li class="nav__item"> <a href="#8"><img src="assets/images/general/8small.svg" alt="Номер задания 8" /></a></li>
+      </ul>
+    </nav>
+  </section>
+  <div class="container">
+    <div class="content-container">
+      <section class="intro">
+        <p class="intro__text">Итак, за структуру твоей креативной сессии отвечает <span class="--strong"> Brainstorm booster, </span><br> а ты не стесняйся ставить амбициозные цели, экспериментировать и искать прорывные решения.</p><br>
+        <p class="intro__text --strong">Делай все последовательно, фокусируйся на каждом этапе.<br>Ну что, начнем?</p>
+      </section>
+      <section class="purpose" id="1"> <img class="purpose__number" src="assets/images/general/1.svg" alt="Номер задания 1" />
+        <h2 class="block__header purpose__header">Что ты хочешь получить в результате<br> креативной сессии?</h2>
+        <div class="purpose__input-field">
+          <textarea class="block__input purpose__input" id="purpose_input" name="purpose" maxlength="1000" height="50px" oninput="countChars('purpose_input')" placeholder="Например, я хочу придумать 3 новые рубрики для развития социальных сетей коммуникационного агентства. Наше агентство разрабатывает коммуникационные стратегии создаёт нестандартные решения для развития брендов (ивенты, мерч, спецпроекты)"></textarea>
+          <output class="purpose__output" id="purpose_input_out"><span id="count_purpose_input">0</span>/1000</output>
+        </div>
+        <button class="btn purpose__btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back.svg" alt="" />
+        <textarea class="purpose__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="block_hints purpose__hints">
+          <p>Поразмышляй, что будет результатом сегодняшней работы. Можешь добавить числовые или смысловые показатели.</p>
+        </div><img class="purpose__tape" src="assets/images/general/tape.svg" alt="" />
+      </section>
+      <section class="target-group" id="2"><img class="target-group__number" src="assets/images/general/2.svg" alt="Номер задания 2" />
+        <h2 class="block__header target-group__header">Для кого всё это?</h2>
+        <div class="target-group__text-box">
+          <p class="block__text target-group__text --strong">Расскажи о своем потребителе.</p>
+          <p class="block__text target-group__text"><span class="--strong"> Заполни фреймворк ниже, отвечая на вопросы:</span> что он делает,слышит,<br> чувствует и говорит. </p>
+        </div>
+        <div id="blockTG1">
+          <div class="target-group__input-table">
+            <div class="target-group__input-field">
+              <textarea class="block__input target-group__input" id="say1" name="target-group_say" maxlength="1000" oninput="countChars('say1')" placeholder="говорит"></textarea>
+              <output class="target-group__output target-group__output--left" id="say1_out"><span id="count_say1">0</span>/1000</output>
+            </div>
+            <div class="target-group__input-field">
+              <textarea class="block__input target-group__input" id="think1" name="target-group_think" maxlength="1000" oninput="countChars('think1')" placeholder="думает"></textarea>
+              <output class="target-group__output" id="think1_out"><span id="count_think1">0</span>/1000</output>
+            </div>
+            <div class="target-group__input-field">
+              <textarea class="block__input target-group__input" id="do1" name="target-group_do" maxlength="1000" oninput="countChars('do1')" placeholder="делает"></textarea>
+              <output class="target-group__output target-group__output--left" id="do1_out"><span id="count_do1">0</span>/1000</output>
+            </div>
+            <div class="target-group__input-field">
+              <textarea class="block__input target-group__input" id="feel1" name="target-group_feel" maxlength="1000" oninput="countChars('feel1')" placeholder="чувствует"></textarea>
+              <output class="target-group__output" id="feel1_out"><span id="count_feel1">0</span>/1000</output>
+            </div>
+            <div class="target-group__round" id="round1">
+              <p>Что?</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn--red target-group__btn--red" id="addTG" type="button">добавить ЦА</button>
+        <button class="btn target-group__btn">сохранить</button>
+        <textarea class="target-group__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="block_hints target-group__hints">
+          <p>Не ограничивай себя возрастом, статусом, или полом. Представь, что это фильм  о потребителе, опиши своего героя. Опиши несколько персонажей.</p>
+        </div><img class="target-group__tape" src="assets/images/general/tape.svg" alt="" />
+      </section>
+      <section class="values" id="3"> <img class="values__number" src="assets/images/general/3.svg" alt="Номер задания 3" />
+        <h2 class="block__header values__header">Ценности</h2>
+        <p class="block__text values__text --strong">Выпиши ценности, если они уже есть.</p>
+        <p class="block__text values__text"><span class="--strong"> Или создай их сейчас,</span> для этого  ответь на вопрос:<br> «Что важно в вашем проекте или продукте?»</p>
+        <div class="values__input-field">
+          <textarea class="block__input values__input" id="values_input" name="values" maxlength="1000" oninput="countChars('values_input')" rows="13" placeholder="Например, вот некоторые ценности нашего коммуникационного
+агентства:
+
+1.Креативный подход к решению любых задач: Мы
+придерживаемся гибкого подхода к решению возникающих
+вопросов.
+
+2.Ценность команды: Мы придаем большое значение навыкам
+каждого члена нашей команды. Мы все ощущаем коллективную
+ответственность и стремимся к развитию как команды, так и
+наших клиентов.
+
+3.Открытость: Мы ценим обмен экспертизой и готовы делиться
+знаниями и опытом с другими."></textarea>
+          <output class="values__output" id="values_input_out"><span id="count_values_input">0</span>/1000</output>
+        </div>
+        <button class="btn values__btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
+        <textarea class="values__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="block_hints values__hints">
+          <p>Если ценностей получится много - пропустите через повторный фильтр, отвечая на вопрос: «действительно ли важна эта ценность для нашего проекта или продукта и почему»</p>
+        </div><img class="values__tape1" src="assets/images/general/tape.svg" alt="" /><img class="values__tape2" src="assets/images/general/tape.svg" alt="" />
+      </section>
+      <section class="emotions" id="4"> <img class="emotions__number" src="assets/images/general/emotions/4.svg" />
+        <h2 class="block__header emotions__header">Эмоции</h2>
+        <div class="emotions__text-box">
+          <p class="block__text emotions__text"><span class="--strong">Выбери эмоции из списка, отвечая на вопрос:</span> «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.</p>
+        </div>
+        <div class="emotions__block">
+          <form class="emotions__options">
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox1" />
+              <label class="emotions__name" for="checkbox1">СЧАСТЬЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox2" />
+              <label class="emotions__name" for="checkbox2">ОЖИДАНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox3" />
+              <label class="emotions__name" for="checkbox3">ТЕПЛОТА</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox4" />
+              <label class="emotions__name" for="checkbox4">ГОРДОСТЬ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox5" />
+              <label class="emotions__name" for="checkbox5">ДОБРОТА</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox6" />
+              <label class="emotions__name" for="checkbox6">ВОСТОРГ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox7" />
+              <label class="emotions__name" for="checkbox7">ПРЕДВКУШЕНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox8" />
+              <label class="emotions__name" for="checkbox8">ДОВЕРИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox9" />
+              <label class="emotions__name" for="checkbox9">ВОСХИЩЕНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox10" />
+              <label class="emotions__name" for="checkbox10">ПРИЗНАНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox11" />
+              <label class="emotions__name" for="checkbox11">УВЛЕЧЕНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox12" />
+              <label class="emotions__name" for="checkbox12">НАДЕЖДА</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox13" />
+              <label class="emotions__name" for="checkbox13">БЕЗОПАСНОСТЬ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox14" />
+              <label class="emotions__name" for="checkbox14">ЛЮБОВЬ К СЕБЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox15" />
+              <label class="emotions__name" for="checkbox15">ВДОХНОВЛЕНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox16" />
+              <label class="emotions__name" for="checkbox16">ИНТЕРЕС</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox17" />
+              <label class="emotions__name" for="checkbox17">ЛЮБОПЫТСТВО</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox18" />
+              <label class="emotions__name" for="checkbox18">БЛАГОДАРНОСТЬ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox19" />
+              <label class="emotions__name" for="checkbox19">ИСКРЕННОСТЬ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox20" />
+              <label class="emotions__name" for="checkbox20">МОТИВАЦИЯ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox21" />
+              <label class="emotions__name" for="checkbox21">ЗАБОТА</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox22" />
+              <label class="emotions__name" for="checkbox22">ИЗУМЛЕНИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox23" />
+              <label class="emotions__name" for="checkbox23">СПОКОЙСТВИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox24" />
+              <label class="emotions__name" for="checkbox24">ДРУЖЕЛЮБИЕ</label>
+            </div>
+            <div class="emotions__item">
+              <input class="emotions__input" type="checkbox" id="checkbox25" />
+              <label class="emotions__name" for="checkbox25">УВАЖЕНИЕ</label>
+            </div>
+          </form>
+          <input class="emotions__self-value" type="text" placeholder="Свой вариант..." />
+          <button class="btn emotions__btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
+          <textarea class="emotions__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+          <div class="emotions__hints _stiker"><img src="assets/images/index/scotch.svg" alt="" />
+            <p>Можешь добавить свою эмоцию в пустом окне </p>
+          </div>
+        </div>
+      </section>
+      <section class="counter" id="7"> <img class="counter__number" src="assets/images/general/7.svg" alt="Номер задания 7" />
+        <h2 class="block__header counter__header">Генерация идей</h2>
+        <p class="block__text counter__text counter__text-first --strong">Ты проанализировал много исходных данных, а сейчас пришло время придумывать новые идеи. Подготовься к работе в несколько этапов.</p>
+        <p class="block__text counter__text --strong"><span class="counter_span-text">1</span> этап</p>
+        <p class="block__text counter__text counter__chang-text --strong">Впиши за 3 минуты форматы и тематики для твоей идеи. Формат — это то, в каком виде она будет реализована. А тематика — любые идеи, которые могут быть воплощены в разных форматах. </p>
+        <div class="counter__entry-fields">
+          <textarea class="counter__textarea textarea-format block__input" placeholder="Формат"></textarea>
+          <textarea class="counter__textarea textarea-themes block__input" placeholder="Тематика"></textarea>
+          <div class="counter__textarea counter__textarea-block textarea-ideas">
+            <textarea class="counter__textarea-idea block__input" placeholder="1 идея"></textarea>
+            <textarea class="counter__textarea-idea block__input" placeholder="2 идея"></textarea>
+            <textarea class="counter__textarea-idea block__input" placeholder="3 идея"></textarea>
+          </div>
+          <div class="counter__textarea counter__textarea-block textarea-comments">
+            <textarea class="counter__textarea-comment block__input" placeholder="Просто начни писать :)"></textarea>
+            <textarea class="counter__textarea-comment block__input"></textarea>
+            <textarea class="counter__textarea-comment block__input"></textarea>
+          </div>
+        </div>
+        <div class="counter__button">
+          <button class="btn counter__btn">далее</button>
+        </div>
+      </section>
+      <div class="button__save">
+        <button class="btn save__btn" type="button" id="btn-save">PDF</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer _conteiner">
+    <div class="footer__conteiner">
+      <div class="footer__info">
+        <div class="footer__brands"><img src="assets/images/footer/logo_yoootime.png" alt="" /><img src="assets/images/footer/logo_disciplina.png" alt="" /><img src="assets/images/footer/logo_lad.png" alt="" /></div>
+        <div class="footer__contacts">
+          <h3>Контакты</h3>
+          <ul class="footer__contacts-list"></ul>
+          <li><a href="">Компания</a></li>
+          <li><a href="">Сайт</a></li>
+          <li><a href="">Соц.сети</a></li>
+          <li><a href="">Лекция по креативу</a></li>
+        </div>
+      </div>
+      <p>Сайт разработан IT-академией Lad</p>
+    </div>
+  </footer>
+  <script src="assets/js/target_group.min.js"></script>
+  <script src="assets/js/counter_anim.min.js"></script>
+  <script src="assets/js/pdfmake.min.js"></script>
+  <script src="assets/js/vfs_fonts.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+  <script src="assets/js/gen_pdf.min.js"></script>
+</body>
+
+</html>
